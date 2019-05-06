@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chatroom</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html{
+			width: 100vw;
+			height: 100vh;
+		}
+		body{
+			width: 100vw;
+			height: 100vh;
+			background-color: green;
+			padding:5vh 0;		
+		}
+		#header{
+			width: 100vw;
+			height: 80px;
+			text-align: center;
+			background-color: yellow;
+			position: fixed;
+			top:0;
+			font-size: 15rem;
+			}
+		#chaters .chater{
+			height: 200px;
+			margin-bottom:10px;
+			font-size: 40px;
+			border: 1px solid black;
+			display: flex; 
+		}
+		#chaters .chater .if{
+			
+		}	
+		#footer{
+			width: 100vw;
+			height: 80px;
+			background-color: blue;
+			position: fixed;
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">消息</header>
+	<ul id="chaters">
+		<li class="chater">
+			<div class="img"><img src="./imgs/leaves" alt=""></div>
+			<div class="chaterInfo"><div class="infoTop"><span class="name">邓维浩</span><span class="time">0.30</span></div><div class="infoBottom"><span class="latestMessage">Hello!!!</span><span class="newMessageCount">10</span></div></div>
+		</li>
+		<li class="chater">
+			<div class="img"><img src="./imgs/leaves" alt=""></div>
+			<div class="chaterInfo"><div class="infoTop"><span class="name">邓维浩</span><span class="time">0.30</span></div><div class="infoBottom"><span class="latestMessage">Hello!!!</span><span class="newMessageCount">10</span></div></div>
+		</li>
+		<li class="chater">
+			<div class="img"><img src="./imgs/leaves" alt=""></div>
+			<div class="chaterInfo"><div class="infoTop"><span class="name">邓维浩</span><span class="time">0.30</span></div><div class="infoBottom"><span class="latestMessage">Hello!!!</span><span class="newMessageCount">10</span></div></div>
+		</li>
+		<li class="chater">
+			<div class="img"><img src="./imgs/leaves" alt=""></div>
+			<div class="chaterInfo"><div class="infoTop"><span class="name">邓维浩</span><span class="time">0.30</span></div><div class="infoBottom"><span class="latestMessage">Hello!!!</span><span class="newMessageCount">10</span></div></div>
+		</li>
+	</ul>
+	<footer id="footer">我是底部</footer>
+<script>
+	window.onload = function(){
+		document.documentElement.style["font-size"] = window.screen.width/100 + "px"
+	}
+</script>
+</body>
+</html>
